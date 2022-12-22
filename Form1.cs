@@ -34,7 +34,7 @@ namespace Win_Rate_Projector
 
             WinLossRatioLabel.Text = "Win / Loss Ratio: " + Math.Round((MatchWinsTracker/MatchCounter), 2);
 
-
+           /*
             if (Math.Round((MatchWinsTracker / MatchCounter), 2) >= 0.55)
             {
                 MainChart.Series["Win / Loss Ratio"].Color = Color.Green;
@@ -47,6 +47,9 @@ namespace Win_Rate_Projector
             {
                 MainChart.Series["Win / Loss Ratio"].Color = Color.Black;
             }
+           */
+
+         
 
             MainChart.Series["Win / Loss Ratio"].Color= Color.Green;
             
@@ -67,6 +70,7 @@ namespace Win_Rate_Projector
 
             MainChart.Series["Win / Loss Ratio"].Points.AddXY(MatchCounter, (MatchWinsTracker / MatchCounter) * 100);
 
+            /*
             if (Math.Round((MatchWinsTracker / MatchCounter), 2) >= 0.55)
             {
                 MainChart.Series["Win / Loss Ratio"].Color = Color.Green;
@@ -79,6 +83,7 @@ namespace Win_Rate_Projector
             {
                 MainChart.Series["Win / Loss Ratio"].Color = Color.Black;
             }
+            */
 
             WinLossRatioLabel.Text = "Win / Loss Ratio: " + Math.Round((MatchWinsTracker / MatchCounter), 2);
 
